@@ -18,7 +18,7 @@ func main()  {
 	var e int
 	fmt.Println(e)
 
-	// := is shot for delcaring and initializing
+	// := is short for declaring and initializing
 	f := "apple"
 	fmt.Println(f)
 }
