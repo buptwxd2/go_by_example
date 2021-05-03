@@ -3,6 +3,17 @@ package main
 import "fmt"
 
 func main()  {
+
+	s := make([]string, 4)
+	p := &s
+	fmt.Println("Address before append is", p)
+	s = append(s, "a", "b", "c", "d")
+	p = &s
+	fmt.Println("Address after append is", p)
+	s = append(s, "e", "f")
+	p = &s
+	fmt.Println("Address after append again is", p)
+
 	//s := make([]string, 3)
 	//fmt.Println(s)
 	//
@@ -17,11 +28,11 @@ func main()  {
 	e[0] = "z"
 	fmt.Println(d)
 
-	s := []int{1,2,3,4,5}
-	s = s[2:4]
-	fmt.Println("len of s is", len(s))
-	fmt.Println("Capacity of s is", cap(s))
-	fmt.Println(cap(s))
-
-	s = s[:cap(s)]
+	//s := []int{1,2,3,4,5}
+	//s = s[2:4]
+	//fmt.Println("len of s is", len(s))
+	//fmt.Println("Capacity of s is", cap(s))
+	//fmt.Println(cap(s))
+	//
+	//s = s[:cap(s)]
 }
